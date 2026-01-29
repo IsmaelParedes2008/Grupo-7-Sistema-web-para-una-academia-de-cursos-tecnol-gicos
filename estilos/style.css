@@ -16,6 +16,10 @@ header {
     text-align: center;
 }
 
+header img {
+  width: 700px;
+}
+
 /* Estilos de la navegación */
 nav {
     background-color: #444;
@@ -285,4 +289,5 @@ li {
 .vision img {
     margin-top: 10px;
     border-radius: 8px;
+
 }
