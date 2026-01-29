@@ -143,3 +143,146 @@ ul {
 li {
     margin-bottom: 5px;
 }
+
+/* Estilos para los cursos */
+.curso {
+    display: inline-block;
+    width: 30%;
+    margin: 1em;
+    text-align: center;
+}
+
+.curso img {
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+}
+
+/* Estilos para los testimonios */
+.testimonio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.testimonio img {
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+/* Estilos para las tecnologías */
+.tecnologias {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.tecnologias img {
+    border-radius: 8px;
+}
+
+/* Estilos para el equipo de desarrollo */
+.equipo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+/* Estilos para los cursos destacados */
+.curso-destacado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.curso-destacado img {
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Estilos para los instructores */
+.instructor {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.instructor img {
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el formulario de contacto */
+.contacto-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contacto-form img {
+    width: 45%;
+    border-radius: 8px;
+}
+
+.contacto-form form {
+    width: 50%;
+}
+
+/* Estilos para la información de contacto */
+.contacto-info {
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-item img {
+    margin-right: 10px;
+}
+
+/* Estilos para las redes sociales */
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    border-radius: 50%;
+}
+
+/* Estilos para la historia */
+/* Estilos para el equipo */
+.equipo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la misión y visión */
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mision,
+.vision {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.vision img {
+    margin-top: 10px;
+    border-radius: 8px;
+}
