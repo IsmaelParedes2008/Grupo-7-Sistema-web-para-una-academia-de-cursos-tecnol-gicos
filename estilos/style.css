@@ -17,14 +17,14 @@ header {
 }
 
 .logoencabezado {
-    width: 600px;
+    width: 700px;
 }
 
 .logoleft {
-    width: 300px;
+    width: 400px;
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 30px;
+    top: 30px;
 }
 
 /* Estilos de la navegación */
@@ -296,7 +296,4 @@ li {
 .vision img {
     margin-top: 10px;
     border-radius: 8px;
-
 }
-
-
