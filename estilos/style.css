@@ -16,8 +16,15 @@ header {
     text-align: center;
 }
 
-header img {
-  width: 600px;
+.logoencabezado {
+    width: 600px;
+}
+
+.logoleft {
+    width: 300px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 
 /* Estilos de la navegación */
@@ -291,4 +298,5 @@ li {
     border-radius: 8px;
 
 }
+
 
