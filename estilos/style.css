@@ -4,13 +4,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #2e2929;
     line-height: 1.6;
 }
 
 /* Estilos del encabezado */
 header {
-    background-color: #333;
+    background-color: #211f1f;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -29,7 +29,7 @@ header {
 
 /* Estilos de la navegación */
 nav {
-    background-color: #444;
+    background-color: #2e2828;
     padding: 0.5em 0;
 }
 
@@ -52,8 +52,11 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #666;
+nav a:hover,
+nav a:focus {
+    background-color: #201c1c;
+    outline: 2px solid #007bff; /* Agrega un borde al elemento enfocado */
+    outline-offset: 2px; /* Separa el borde del elemento */
 }
 
 /* Estilos del contenido principal */
@@ -75,7 +78,7 @@ section {
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #333;
+    background-color: #2b2828;
     color: #fff;
     margin-top: 2em;
 }
@@ -91,8 +94,11 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     background-color: #0056b3;
+    outline: 2px solid #007bff; /* Agrega un borde al elemento enfocado */
+    outline-offset: 2px; /* Separa el borde del elemento */
 }
 
 /* Estilos del formulario de contacto */
@@ -127,8 +133,11 @@ button[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover,
+button[type="submit"]:focus {
     background-color: #0056b3;
+    outline: 2px solid #007bff; /* Agrega un borde al elemento enfocado */
+    outline-offset: 2px; /* Separa el borde del elemento */
 }
 
 /* Estilos de los miembros del equipo */
@@ -296,4 +305,9 @@ li {
 .vision img {
     margin-top: 10px;
     border-radius: 8px;
+}
+
+/* Transición global para las imágenes */
+img {
+  transition: transform 0.3s ease;
 }
