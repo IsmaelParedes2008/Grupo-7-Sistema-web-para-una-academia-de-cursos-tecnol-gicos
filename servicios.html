@@ -31,19 +31,19 @@
         <section>
             <h3>Cursos Destacados</h3>
             <div class="curso-destacado">
-                <img src="imagenes/cursos/curso-desarrollo-web.png" alt="Curso de Desarrollo Web" width="300">
+                <img src="imagenes/cursos/curso-desarrollo-web.png" alt="Curso de Desarrollo Web" width="300" class="zoomable-image">
                 <h4>Desarrollo Web Full Stack</h4>
                 <p>Aprende a crear aplicaciones web completas, desde el frontend hasta el backend. Domina HTML, CSS, JavaScript, Node.js y bases de datos.</p>
                 <a href="#" class="button">Inscribirse</a>
             </div>
             <div class="curso-destacado">
-                <img src="imagenes/cursos/curso-marketing-digital.png" alt="Curso de Marketing Digital" width="300">
+                <img src="imagenes/cursos/curso-marketing-digital.png" alt="Curso de Marketing Digital" width="300" class="zoomable-image">
                 <h4>Marketing Digital</h4>
                 <p>Conviértete en un experto en marketing online. Aprende SEO, SEM, redes sociales, email marketing y analítica web.</p>
                 <a href="#" class="button">Inscribirse</a>
             </div>
             <div class="curso-destacado">
-                <img src="imagenes/cursos/curso-ciencia-datos.png" alt="Curso de Ciencia de Datos" width="300">
+                <img src="imagenes/cursos/curso-ciencia-datos.png" alt="Curso de Ciencia de Datos" width="300" class="zoomable-image">
                 <h4>Ciencia de Datos</h4>
                 <p>Descubre el poder de los datos. Aprende a analizar, visualizar y modelar datos utilizando Python, R y herramientas de machine learning.</p>
                 <a href="#" class="button">Inscribirse</a>
@@ -51,14 +51,22 @@
         </section>
 
         <section>
+            <h3>Información del Curso Seleccionado</h3>
+            <p id="descripcion-curso"></p>
+            <h4>Temario:</h4>
+            <p id="temario-curso"></p>
+            <p id="instructores-curso"></p>
+        </section>
+
+        <section>
             <h3>Nuestros Instructores Expertos</h3>
             <div class="instructor">
-                <img src="imagenes/iconos/testimonio-2.png" alt="Instructor Juan Pérez" width="100">
+                <img src="imagenes/iconos/testimonio-2.png" alt="Instructor Juan Pérez" width="100" class="zoomable-image">
                 <h4>Juan Pérez</h4>
                 <p>Especialista en Desarrollo Web</p>
             </div>
             <div class="instructor">
-                <img src="imagenes/iconos/testimonio-2.png" alt="Instructora María García" width="100">
+                <img src="imagenes/iconos/testimonio-2.png" alt="Instructora María García" width="100" class="zoomable-image">
                 <h4>María García</h4>
                 <p>Especialista en Marketing Digital</p>
             </div>
@@ -77,6 +85,24 @@
     <footer>
         <p>&copy; 2026 Academia de Cursos Tecnológicos</p>
     </footer>
+    <script>
+      // Obtener el título del curso de la URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const curso = urlParams.get('curso');
+
+      // Si se ha seleccionado un curso, mostrar su información
+      if (curso) {
+        // Mostrar un mensaje genérico con el título del curso
+        document.querySelector("#descripcion-curso").textContent = "Información del curso: " + curso;
+        document.querySelector("#temario-curso").textContent = "Temario no disponible.";
+        document.querySelector("#instructores-curso").textContent = "Instructores no disponible.";
+      } else {
+        // Si no se ha seleccionado un curso, mostrar un mensaje genérico
+        document.querySelector("#descripcion-curso").textContent = "Seleccione un curso para ver su información.";
+        document.querySelector("#temario-curso").textContent = "";
+        document.querySelector("#instructores-curso").textContent = "";
+      }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
