@@ -56,4 +56,6 @@ El proyecto consistio en desarrollar una pagina web **Academia de Cursos Tecnolo
 - CSS3
 
 ## Cómo ver el sitio 🚀
-https://ismaelparedes2008.github.io/Componente-pr-ctico_1/index.html
+https://ismaelparedes2008.github.io/Grupo-7-Sistema-web-para-una-academia-de-cursos-tecnol-gicos
+/index.html
+
