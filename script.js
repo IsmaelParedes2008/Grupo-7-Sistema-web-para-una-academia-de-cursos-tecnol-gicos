@@ -75,10 +75,4 @@ document.addEventListener("DOMContentLoaded", function() {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailRegex.test(email);
     }
-
-    formularioContacto.addEventListener("submit", function(event) {
-      event.preventDefault();
-      alert("¡Gracias por tu mensaje! Lo hemos recibido correctamente.");
-      formularioContacto.reset();
-    });
   };
