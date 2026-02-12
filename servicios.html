@@ -85,24 +85,6 @@
     <footer>
         <p>&copy; 2026 Academia de Cursos Tecnológicos</p>
     </footer>
-    <script>
-      // Obtener el título del curso de la URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const curso = urlParams.get('curso');
-
-      // Si se ha seleccionado un curso, mostrar su información
-      if (curso) {
-        // Mostrar un mensaje genérico con el título del curso
-        document.querySelector("#descripcion-curso").textContent = "Información del curso: " + curso;
-        document.querySelector("#temario-curso").textContent = "Temario no disponible.";
-        document.querySelector("#instructores-curso").textContent = "Instructores no disponible.";
-      } else {
-        // Si no se ha seleccionado un curso, mostrar un mensaje genérico
-        document.querySelector("#descripcion-curso").textContent = "Seleccione un curso para ver su información.";
-        document.querySelector("#temario-curso").textContent = "";
-        document.querySelector("#instructores-curso").textContent = "";
-      }
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
