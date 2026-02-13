@@ -1,4 +1,3 @@
-//hace que el menu salga la letra y el fondo de azul usando el mouseenter y mouseleave
 document.addEventListener("DOMContentLoaded", function() {
   let enlaces = document.querySelectorAll("nav a");
   enlaces.forEach(enlace => {
@@ -10,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  //-------------------------------------------------------------------------------
-  //hace zomm a las imagenes con los eventos mouseenter(pasa raton) mouseleave(sale raton)
+
   let zoomableImages = document.querySelectorAll(".zoomable-image");
   zoomableImages.forEach(image => {
     let originalWidth = image.width;
@@ -27,8 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
       image.style.transition = "transform 0.3s ease"; 
     });
   });
-  //----------------------------------------------------------------------
-  //redirige a la pagina servicios
+
   let cursos = document.querySelectorAll(".curso, .curso-destacado");
    cursos.forEach(curso => {
     curso.addEventListener("click", function() {
@@ -37,8 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
    });
   });
-  //------------------------------------------------------------------------
-  //autocompleta el registro en contacto
+
   const formularioContacto = document.querySelector("#contacto form");
 
   if (formularioContacto) {
